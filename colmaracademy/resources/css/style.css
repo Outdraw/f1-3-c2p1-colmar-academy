@@ -1,0 +1,372 @@
+/* CSS for Colmar Academy */
+
+/*
+
+Color codes
+
+DimGray #696969
+DarkerGray #484848
+LighterGray #b7b7b7
+
+*/
+
+
+/* Global */
+
+body {
+	font-family: 'Calibri', sans-serif;
+	font-size: 16px;
+	color: #484848;
+	background-color: #EAEBED;
+	width: 100%;
+	height: 100%;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+	top: 0;
+	z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+	font-size: 1.5rem;
+}
+
+em {
+  font-weight: bold;
+  color: black;
+}
+
+ul li {
+  display: inline;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.navigation {
+  padding-right: 3rem;
+}
+
+a {
+	text-decoration: none;
+	color: #696969;
+}
+
+nav {
+    margin: 0 24px;
+}
+
+nav a:hover {
+  color: black;
+  font-weight: bold;
+  transition: all 100ms ease-in-out 50ms;
+}
+
+.resp {
+	display: none;
+}
+
+/* Mobile Header */
+
+@media only screen and (max-width: 450px) {
+  header {
+    display: none;
+  }
+
+.resp {
+    display: inline;
+    background-color: white;
+    height: 4rem;
+    border-bottom: 1px solid #black;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+
+/* Learn something new (LSN) */
+
+main {
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 4rem;
+	background-color: lightgrey;
+	height: 42rem;
+}
+
+main img {
+  max-width:60%;
+  padding: 2rem 1.5rem;
+}
+
+.LSN {
+	padding: 8rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 30%;
+}
+
+.LSN-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding: 1rem;
+	background-color: #b7b7b7;
+}
+
+.LSN-button:hover {
+	background-color: white;
+	color: white;
+	transition: all 200ms ease-in-out 100ms;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* It doesn't hurt (IDH) */
+
+.section-IDH {
+  display: flex;
+}
+
+section img {
+  max-width: 82%; /* I tried it with 60% but it doesn't worked... */
+  padding: 2rem 1.5rem;
+}
+
+.IDH-content {
+	padding: 0rem 1.5rem 2rem 1.5rem;
+	max-width: 45%;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+	font-weight: bold;
+}
+
+.side-content img {
+  width: 9.45rem;
+}
+
+.side-content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+	padding-right: 3rem;
+}
+
+/* To be honest: I don't know why the third picture ("Our guest lecture") is smaller then the other ones.
+	 Additional to that I dont get the space between the 3 boxes and the picture on the left side smaller. */
+
+.box-details a {
+  color: #3399ff;
+  text-shadow: 1px 1px lightgrey;
+}
+
+.side-content-box:hover {
+  background-color: lightgrey;
+}
+
+
+/*  Start learning Content */
+
+.section-start-learning {
+  display: block;
+  justify-content: center;
+  background-color: lightgrey;
+}
+
+.start-learning {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.course {
+  display: block;
+  justify-content: flex-start;
+  background-color: white;
+  margin: 0rem 1rem 2rem 1rem;
+  width: 25%
+}
+
+.course-overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.course img {
+  padding-bottom: 1.0rem;
+  width: 100%;
+}
+
+.course h3 {
+	padding: 0rem 1rem;
+	font-size: 1.5rem;
+}
+
+.course p {
+	padding: 0rem 1rem 1.5rem 1rem;
+	font-size: 1.5rem;
+}
+
+/* THe above part was much easier as the part before :-/ */
+
+@media only screen and (max-width: 450px) {
+
+  .section-start-learnin {
+    background-color: white;
+  }
+
+  .course-overview {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .course {
+    width: auto;
+    justify-content: center;
+    padding-right: 2rem;
+    margin: 0rem 2rem 1rem 2rem;
+    background-color: lightgrey;
+  }
+
+  .course:hover {
+    background-color: #edd244;
+    transition: color 200ms ease-in 250ms;
+  }
+
+  .course h3 {
+    padding: 1.5rem;
+  }
+
+	.course p {
+	    display: none;
+	}
+
+  .course img {
+    display: none;
+  }
+
+}
+
+
+/* Thesis exhibit */
+
+.section-thesis {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+	padding-top: 2rem;
+}
+
+section video {
+  padding: 2rem 1.5rem;
+  width: 77%;
+}
+
+.thesis-video-text {
+	padding: 0rem 1.5rem 2rem 1.5rem;
+	max-width: 45%;
+}
+
+.thesis-exhibit {
+	display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+	background: white;
+}
+
+.thesis-info-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+	padding-right: 3rem;
+}
+
+.thesis-side-content img {
+  width: 9.45rem;
+}
+
+.thesis-info-box:hover {
+  background-color: lightgrey;
+}
+
+/* Same problem like in the other part. Don't know why both picture scale different. */
+
+@media only screen and (max-width: 450px) {
+  .thesis-video-text {
+    display: none;
+  }
+
+  .thesis-side-content {
+    display: none;
+  }
+
+  section video {
+    padding: 2rem 0rem;
+    width: 100%;
+  }
+
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 6rem;
+  border-top: 1px solid lightgrey;
+}
+
+footer p {
+  padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    display: none;
+  }
+}
